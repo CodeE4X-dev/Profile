@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Al</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="icon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/three@0.132.2/build/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+</head>
+<body>
+    
+    <div id="particles-js"></div>
+    
+    
+    <canvas id="background-canvas"></canvas>
+    
+    
+    <div id="overlay">
+        <div class="text-center">
+            <h1 id="dynamic-taphere" class="mb-4"></h1>
+            <p id="tap-here" class="animate-pulse">Tap Here</p>
+        </div>
+    </div>
+    
+    
+    <div class="sidebar">
+        <div class="sidebar-content">
+            <div class="sidebar-header">
+                <div class="logo">-</div>
+                <button id="sidebar-toggle" class="sidebar-toggle">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+            </div>
+            <div class="sidebar-links">
+                <a href="#profile" class="sidebar-link active">
+                    <i class="fas fa-user"></i>
+                    <span>Profile</span>
+                </a>
+                <a href="#skills" class="sidebar-link">
+                    <i class="fas fa-code"></i>
+                    <span>Skills</span>
+                </a>
+                <a href="#work" class="sidebar-link">
+                    <i class="fas fa-briefcase"></i>
+                    <span>Work</span>
+                </a>
+                <a href="#income" class="sidebar-link">
+                    <i class="fas fa-money-bill-wave"></i>
+                    <span>Income</span>
+                </a>
+            </div>
+            <div class="sidebar-social">
+                <a href="https://discord.gg/b7yA7uTfmp" target="_blank" class="social-icon">
+                    <i class="fab fa-discord"></i>
+                </a>
+                <a href="https://github.com/CodeE4X-dev" target="_blank" class="social-icon">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://twitter.com/CodeE4X" target="_blank" class="social-icon">
+                    <i class="fab fa-twitter"></i>
+                </a>
+                <a href="https://instagram.com/screaminout_" target="_blank" class="social-icon">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                
+                </a>
+            </div>
+        </div>
+    </div>
+    
+    
+    <main class="main-content">
+        
+        <section id="profile" class="section">
+            <div class="profile-container">
+                <div class="profile-card">
+                    <div class="profile-avatar">
+                        <img src="Assets/isa.png" alt="Profile Avatar" class="avatar-img">
+                        <div class="avatar-glow"></div>
+                    </div>
+                    <div class="profile-info">
+                        <h1 class="profile-name">Al</h1>
+                        <p class="profile-title">idk what i need put here</p>
+                        <p class="profile-quote">Im lazy to buy domain + i dont have idea</p>
+                        <div class="profile-stats">
+                            <div class="stat">
+                                <i class="fas fa-eye"></i>
+                                <span id="view-count">0</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-code-branch"></i>
+                                <span>42</span>
+                            </div>
+                            <div class="stat">
+                                <i class="fas fa-terminal"></i>
+                                <span>1337</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        <section id="skills" class="section">
+            <h2 class="section-title">My Programming Language</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3 class="category-title">Programming Languages</h3>
+                    <div class="skills-grid">
+                        <div class="skill-card" data-skill="Lua">
+                            <i class="devicon-lua-plain"></i>
+                            <span>Lua</span>
+                        </div>
+                        <div class="skill-card" data-skill="Vue.js">
+                            <i class="fab fa-vuejs"></i>
+                            <span>Vue.js</span>
+                        </div>
+                        <div class="skill-card" data-skill="JavaScript">
+                            <i class="fab fa-js"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-card" data-skill="Python">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="skill-card" data-skill="Java">
+                            <i class="fab fa-java"></i>
+                            <span>Java</span>
+                        </div>
+                        <div class="skill-card" data-skill="C">
+                            <i class="fas fa-copyright"></i>
+                            <span>C</span>
+                        </div>
+                        <div class="skill-card" data-skill="Ruby">
+                            <i class="fas fa-gem"></i>
+                            <span>Ruby</span>
+                        </div>
+                        <div class="skill-card" data-skill="Swift">
+                            <i class="fab fa-swift"></i>
+                            <span>Swift</span>
+                        </div>
+                        <div class="skill-card" data-skill="Go">
+                            <i class="fab fa-golang"></i>
+                            <span>Go</span>
+                        </div>
+                        <div class="skill-card" data-skill="Rust">
+                            <i class="fas fa-cog"></i>
+                            <span>Rust</span>
+                        </div>
+                        <div class="skill-card" data-skill="PHP">
+                            <i class="fab fa-php"></i>
+                            <span>PHP</span>
+                        </div>
+                        <div class="skill-card" data-skill="Kotlin">
+                            <i class="fab fa-android"></i>
+                            <span>Kotlin</span>
+                        </div>
+                        <div class="skill-card" data-skill="TypeScript">
+                            <i class="fab fa-js"></i>
+                            <span>TypeScript</span>
+                        </div>
+                        <div class="skill-card" data-skill="Dart">
+                            <i class="fas fa-bullseye"></i>
+                            <span>Dart</span>
+                        </div>
+                        <div class="skill-card" data-skill="Perl">
+                            <i class="fas fa-terminal"></i>
+                            <span>Perl</span>
+                        </div>
+                        <div class="skill-card" data-skill="Haskell">
+                            <i class="fas fa-h-square"></i>
+                            <span>Haskell</span>
+                        </div>
+                        <div class="skill-card" data-skill="R">
+                            <i class="fab fa-r-project"></i>
+                            <span>R</span>
+                        </div>
+                        <div class="skill-card" data-skill="Scala">
+                            <i class="fas fa-code"></i>
+                            <span>Scala</span>
+                        </div>
+                        <div class="skill-card" data-skill="Bash">
+                            <i class="fas fa-terminal"></i>
+                            <span>Bash</span>
+                        </div>
+                        <div class="skill-card" data-skill="PowerShell">
+                            <i class="fab fa-windows"></i>
+                            <span>PowerShell</span>
+                        </div>
+                        <div class="skill-card" data-skill="SQL">
+                            <i class="fas fa-database"></i>
+                            <span>SQL</span>
+                        </div>
+                        <div class="skill-card" data-skill="Assembly">
+                            <i class="fas fa-microchip"></i>
+                            <span>Assembly</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        <section id="work" class="section">
+            <h2 class="section-title">Work Experience</h2>
+            <div class="work-container">
+                <div class="work-card">
+                    <div class="work-icon red">
+                        <i class="fas fa-hat-cowboy"></i>
+                    </div>
+                    <div class="work-content">
+                        <h3 class="work-title">Red Hat Hacker 🔴</h3>
+                        <p class="work-description">Fighting back against __ ykykyk</p>
+                        <div class="work-skills">
+                            <span class="skill-tag">Penetration Testing</span>
+                            <span class="skill-tag">Ethical Hacking</span>
+                            <span class="skill-tag">Security Research</span>
+                        </div>
+                    </div>
+                    <div class="work-hover">
+                        <div class="work-hover-content">
+                            <h4>Red Hat Hacker</h4>
+                            <p>Specialized in offensive security with a focus on protecting systems and networks from malicious actors.</p>
+                            <ul>
+                                <li>Vulnerability assessment</li>
+                                <li>Security auditing</li>
+                                <li>Penetration testing</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="work-card">
+                    <div class="work-icon grey">
+                        <i class="fas fa-hat-cowboy"></i>
+                    </div>
+                    <div class="work-content">
+                        <h3 class="work-title">Grey Hat Hacker ⚫⚪</h3>
+                        <p class="work-description">Mistake finder frfr and make money from it</p>
+                        <div class="work-skills">
+                            <span class="skill-tag">Bug Bounty</span>
+                            <span class="skill-tag">Vulnerability Research</span>
+                            <span class="skill-tag">Exploit Development</span>
+                        </div>
+                    </div>
+                    <div class="work-hover">
+                        <div class="work-hover-content">
+                            <h4>Grey Hat Hacker</h4>
+                            <p>Walking the line between ethical and unethical hacking, finding vulnerabilities and reporting them for rewards.</p>
+                            <ul>
+                                <li>Bug bounty hunting</li>
+                                <li>Zero-day discovery</li>
+                                <li>Security research</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="work-card">
+                    <div class="work-icon purple">
+                        <i class="fas fa-mask"></i>
+                    </div>
+                    <div class="work-content">
+                        <h3 class="work-title">Hacktivist 🎭</h3>
+                        <p class="work-description">Expose something in socmed and become anonymous (I feel I'm the main character)</p>
+                        <div class="work-skills">
+                            <span class="skill-tag">Social Engineering</span>
+                            <span class="skill-tag">OSINT</span>
+                            <span class="skill-tag">Digital Activism</span>
+                        </div>
+                    </div>
+                    <div class="work-hover">
+                        <div class="work-hover-content">
+                            <h4>Hacktivist</h4>
+                            <p>Using hacking skills for political or social causes, exposing wrongdoing and promoting transparency.</p>
+                            <ul>
+                                <li>Information disclosure</li>
+                                <li>Digital activism</li>
+                                <li>Public awareness campaigns</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="work-card">
+                    <div class="work-icon blue">
+                        <i class="fas fa-bullhorn"></i>
+                    </div>
+                    <div class="work-content">
+                        <h3 class="work-title">Whistleblower Hacker 📢</h3>
+                        <p class="work-description">I don't want in jail pls fbi dont hunt me im innocent (Exposing Injustice)</p>
+                        <div class="work-skills">
+                            <span class="skill-tag">Data Exfiltration</span>
+                            <span class="skill-tag">Secure Communication</span>
+                            <span class="skill-tag">Anonymous Publishing</span>
+                        </div>
+                    </div>
+                    <div class="work-hover">
+                        <div class="work-hover-content">
+                            <h4>Whistleblower Hacker</h4>
+                            <p>Revealing classified or protected information to expose illegal or unethical activities within organizations.</p>
+                            <ul>
+                                <li>Secure data extraction</li>
+                                <li>Anonymous communication</li>
+                                <li>Public interest disclosure</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        <section id="income" class="section">
+            <h2 class="section-title">Income Streams</h2>
+            <div class="income-container">
+                <div class="income-chart-container">
+                    <canvas id="incomeChart"></canvas>
+                </div>
+                <div class="income-details">
+                    <div class="income-card">
+                        <div class="income-icon">
+                            <i class="fas fa-bug"></i>
+                        </div>
+                        <div class="income-info">
+                            <h3>Bug Bounty Programs</h3>
+                            <p>Finding and reporting security vulnerabilities in exchange for rewards</p>
+                            <div class="income-amount">$10.000/reports</div>
+                        </div>
+                    </div>
+                    <div class="income-card">
+                        <div class="income-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <div class="income-info">
+                            <h3>Attacking Some Script Kiddies</h3>
+                            <p>Skid have money too, so i stealing it</p>
+                            <div class="income-amount">$ i give to orphanage</div>
+                        </div>
+                    </div>
+                    <div class="income-card">
+                        <div class="income-icon">
+                            <i class="fas fa-laptop-code"></i>
+                        </div>
+                        <div class="income-info">
+                            <h3>Grey Hat</h3>
+                            <p>i dont want expose this here</p>
+                            <div class="income-amount">$8.5k/week</div>
+                        </div>
+                    </div>
+                    <div class="income-card">
+                        <div class="income-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <div class="income-info">
+                            <h3>Roblox Script Dev</h3>
+                            <p>im bad at lua fr!</p>
+                            <div class="income-amount">$100/month</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <audio id="background-music" src="https://encrypted-bytes.com/download/7f8a4a7a14c62834c68dfa7df54d21665c6e2d77d96465aa2789d2a285f98924/7aa22f4e1797c53e3426c1623ddf89c4/02fc49e803d30dd3649852d86ddb3d90954f5e6e8a87491726f5065cf95ce36f1c96325367a2bc775cd914be88fc5c0c06d763f5482d43ab086950abe9d5fd37afa0f3ba4dbff1cec0fa9f51b0a11049/3212c04deae956665b7fbd833d4dc96d" preload="auto"></audio>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        function startBackgroundMusic() {
+            const music = document.getElementById('background-music');
+            music.play();
+        }
+        document.getElementById('overlay').addEventListener('click', () => {
+            document.getElementById('overlay').classList.add('hidden');
+            startBackgroundMusic();
+        });
+        const taphereTitles = [
+            'Thanks to God',
+            'Ubur Ubur ikan Lele',
+            'kau anak ngntd le',
+            'Elite Hacker',
+            'Digital Nomad'
+        ];
+
+        const dynamicTaphereEl = document.getElementById('dynamic-taphere');
+        let currentTaphereIndex = 0;
+        let isTaphereDeleting = false;
+        let taphereTypingSpeed = 100;
+        let taphereDeleteSpeed = 100;
+        let currentTaphereText = '';
+        let pauseTaphere = false;
+
+        function typingEffectTaphere() {
+            if (pauseTaphere) return;
+
+            const fullText = taphereTitles[currentTaphereIndex];
+
+            if (isTaphereDeleting) {
+                currentTaphereText = fullText.substring(0, currentTaphereText.length - 1);
+            } else {
+                currentTaphereText = fullText.substring(0, currentTaphereText.length + 1);
+            }
+
+            dynamicTaphereEl.textContent = currentTaphereText;
+
+            let speed = taphereTypingSpeed;
+
+            if (isTaphereDeleting) {
+                speed = taphereDeleteSpeed;
+            }
+
+            if (!isTaphereDeleting && currentTaphereText === fullText) {
+                pauseTaphere = true;
+                speed = 2000;
+                setTimeout(() => {
+                    isTaphereDeleting = true;
+                    pauseTaphere = false;
+                }, speed);
+            } else if (isTaphereDeleting && currentTaphereText === '') {
+                isTaphereDeleting = false;
+                currentTaphereIndex = (currentTaphereIndex + 1) % taphereTitles.length;
+                speed = 250;
+            }
+
+            setTimeout(typingEffectTaphere, speed);
+        }
+
+        setTimeout(typingEffectTaphere, 500);
+
+        document.getElementById('overlay').addEventListener('click', () => {
+            document.getElementById('overlay').classList.add('hidden');
+        });
+
+        document.getElementById('sidebar-toggle').addEventListener('click', () => {
+            document.querySelector('.sidebar').classList.toggle('collapsed');
+            document.querySelector('.main-content').classList.toggle('expanded');
+
+            const icon = document.querySelector('.sidebar-toggle i');
+            if (icon.classList.contains('fa-chevron-left')) {
+                icon.classList.remove('fa-chevron-left');
+                icon.classList.add('fa-chevron-right');
+            } else {
+                icon.classList.remove('fa-chevron-right');
+                icon.classList.add('fa-chevron-left');
+            }
+        });
+
+        document.querySelectorAll('.sidebar-link').forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+
+                document.querySelectorAll('.sidebar-link').forEach(l => {
+                    l.classList.remove('active');
+                });
+
+                this.classList.add('active');
+
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+
+                window.scrollTo({
+                    top: targetElement.offsetTop,
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        document.addEventListener("DOMContentLoaded", function() {
+            let views = localStorage.getItem("profileViews") || 0;
+            views = parseInt(views) + 1;
+            localStorage.setItem("profileViews", views);
+            document.getElementById("view-count").textContent = views;
+        });
+
+        const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+        const renderer = new THREE.WebGLRenderer({ 
+            canvas: document.getElementById('background-canvas'), 
+            alpha: true,
+            powerPreference: "high-performance"
+        });
+        renderer.setSize(window.innerWidth, window.innerHeight);
+        renderer.setClearAlpha(0);
+
+        const starGeometry = new THREE.BufferGeometry();
+        const starCount = 2000;
+        const posArray = new Float32Array(starCount * 3);
+        const velocityArray = new Float32Array(starCount * 3);
+
+        for (let i = 0; i < starCount * 3; i += 3) {
+            posArray[i] = (Math.random() - 0.5) * 2000;
+            posArray[i + 1] = (Math.random() - 0.5) * 2000;
+            posArray[i + 2] = (Math.random() - 0.5) * 2000;
+            velocityArray[i] = (Math.random() - 0.5) * 2;
+            velocityArray[i + 1] = (Math.random() - 0.5) * 2;
+            velocityArray[i + 2] = (Math.random() - 0.5) * 2;
+        }
+
+        starGeometry.setAttribute('position', new THREE.BufferAttribute(posArray, 3));
+
+        const starMaterial = new THREE.PointsMaterial({
+            color: 0x00ff00,
+            size: 0.7,
+            blending: THREE.AdditiveBlending,
+            transparent: true,
+            opacity: 0.8
+        });
+
+        const starField = new THREE.Points(starGeometry, starMaterial);
+        scene.add(starField);
+
+        const gridHelper = new THREE.GridHelper(2000, 50, 0x00ff00, 0x00ff00);
+        gridHelper.position.y = -100;
+        scene.add(gridHelper);
+
+        const cubes = [];
+        for (let i = 0; i < 20; i++) {
+            const geometry = new THREE.BoxGeometry(20, 20, 20);
+            const material = new THREE.MeshBasicMaterial({ 
+                color: 0x00ff00, 
+                wireframe: true,
+                transparent: true,
+                opacity: 0.5
+            });
+            const cube = new THREE.Mesh(geometry, material);
+            cube.position.x = (Math.random() - 0.5) * 1000;
+            cube.position.y = (Math.random() - 0.5) * 1000;
+            cube.position.z = (Math.random() - 0.5) * 1000;
+            cube.rotation.x = Math.random() * Math.PI;
+            cube.rotation.y = Math.random() * Math.PI;
+
+            cube.userData = {
+                rotationSpeed: {
+                    x: (Math.random() - 0.5) * 0.02,
+                    y: (Math.random() - 0.5) * 0.02,
+                    z: (Math.random() - 0.5) * 0.02
+                }
+            };
+
+            scene.add(cube);
+            cubes.push(cube);
+        }
+
+        camera.position.z = 500;
+
+        let mouseX = 0;
+        let mouseY = 0;
+        let targetX = 0;
+        let targetY = 0;
+        const windowHalfX = window.innerWidth / 2;
+        const windowHalfY = window.innerHeight / 2;
+
+        document.addEventListener('mousemove', (event) => {
+            mouseX = (event.clientX - windowHalfX);
+            mouseY = (event.clientY - windowHalfY);
+        });
+
+        function animate() {
+            requestAnimationFrame(animate);
+
+            const positions = starField.geometry.attributes.position.array;
+            for (let i = 0; i < positions.length; i += 3) {
+                positions[i] += velocityArray[i];
+                positions[i + 1] += velocityArray[i + 1];
+                positions[i + 2] += velocityArray[i + 2];
+
+                if (Math.abs(positions[i]) > 1000 || 
+                    Math.abs(positions[i + 1]) > 1000 || 
+                    Math.abs(positions[i + 2]) > 1000) {
+                    positions[i] = (Math.random() - 0.5) * 2000;
+                    positions[i + 1] = (Math.random() - 0.5) * 2000;
+                    positions[i + 2] = (Math.random() - 0.5) * 2000;
+                }
+            }
+            starField.geometry.attributes.position.needsUpdate = true;
+
+            cubes.forEach(cube => {
+                cube.rotation.x += cube.userData.rotationSpeed.x;
+                cube.rotation.y += cube.userData.rotationSpeed.y;
+                cube.rotation.z += cube.userData.rotationSpeed.z;
+            });
+
+            targetX = mouseX * 0.001;
+            targetY = mouseY * 0.001;
+            camera.rotation.y += 0.05 * (targetX - camera.rotation.y);
+            camera.rotation.x += 0.05 * (targetY - camera.rotation.x);
+
+            renderer.render(scene, camera);
+        }
+
+        window.addEventListener('resize', () => {
+            const width = window.innerWidth;
+            const height = window.innerHeight;
+
+            camera.aspect = width / height;
+            camera.updateProjectionMatrix();
+
+            renderer.setSize(width, height);
+        });
+
+        particlesJS('particles-js', {
+            particles: {
+                number: {
+                    value: 80,
+                    density: {
+                        enable: true,
+                        value_area: 800
+                    }
+                },
+                color: {
+                    value: '#00ff00'
+                },
+                shape: {
+                    type: 'triangle',
+                    stroke: {
+                        width: 0,
+                        color: '#000000'
+                    },
+                    polygon: {
+                        nb_sides: 5
+                    }
+                },
+                opacity: {
+                    value: 0.5,
+                    random: false,
+                    anim: {
+                        enable: false,
+                        speed: 1,
+                        opacity_min: 0.1,
+                        sync: false
+                    }
+                },
+                size: {
+                    value: 3,
+                    random: true,
+                    anim: {
+                        enable: false,
+                        speed: 40,
+                        size_min: 0.1,
+                        sync: false
+                    }
+                },
+                line_linked: {
+                    enable: true,
+                    distance: 150,
+                    color: '#00ff00',
+                    opacity: 0.4,
+                    width: 1
+                },
+                move: {
+                    enable: true,
+                    speed: 6,
+                    direction: 'none',
+                    random: false,
+                    straight: false,
+                    out_mode: 'out',
+                    bounce: false,
+                    attract: {
+                        enable: false,
+                        rotateX: 600,
+                        rotateY: 1200
+                    }
+                }
+            },
+            interactivity: {
+                detect_on: 'canvas',
+                events: {
+                    onhover: {
+                        enable: true,
+                        mode: 'repulse'
+                    },
+                    onclick: {
+                        enable: true,
+                        mode: 'push'
+                    },
+                    resize: true
+                },
+                modes: {
+                    grab: {
+                        distance: 400,
+                        line_linked: {
+                            opacity: 1
+                        }
+                    },
+                    bubble: {
+                        distance: 400,
+                        size: 40,
+                        duration: 2,
+                        opacity: 8,
+                        speed: 3
+                    },
+                    repulse: {
+                        distance: 200,
+                        duration: 0.4
+                    },
+                    push: {
+                        particles_nb: 4
+                    },
+                    remove: {
+                        particles_nb: 2
+                    }
+                }
+            },
+            retina_detect: true
+        });
+
+        const ctx = document.getElementById('incomeChart').getContext('2d');
+        const incomeChart = new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+                labels: ['Bug Bounty Programs', 'Attck Script Kiddies', 'Grey hat', 'Roblox Script Dev'],
+                datasets: [{
+                    label: 'Income Distribution',
+                    data: [10000, 150, 8500, 1000],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.7)',
+                        'rgba(54, 162, 235, 0.7)',
+                        'rgba(255, 206, 86, 0.7)',
+                        'rgba(75, 192, 192, 0.7)'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'right',
+                        labels: {
+                            color: '#ffffff'
+                        }
+                    },
+                    tooltip: {
+                        backgroundColor: 'rgba(0, 0, 0, 0.8)',
+                        titleColor: '#00ff00',
+                        bodyColor: '#ffffff',
+                        borderColor: '#00ff00',
+                        borderWidth: 1
+                    }
+                },
+                animation: {
+                    animateScale: true,
+                    animateRotate: true
+                }
+            }
+        });
+
+        animate();
+    </script>
+</body>
+</html>
+
