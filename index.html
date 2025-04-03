@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al-Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&family=Fira+Code:wght@400;500;600&family=Source+Code+Pro:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="dark-theme">
+    <div class="matrix-background"></div>
+    
+    <div class="theme-switch">
+        <i class="fas fa-sun"></i>
+        <label class="switch">
+            <input type="checkbox" id="theme-toggle" checked>
+            <span class="slider round"></span>
+        </label>
+        <i class="fas fa-moon"></i>
+    </div>
+
+    <header>
+        <nav>
+            <div class="logo">
+                <span class="logo-text">&lt;/&gt; SK!B1D!</span>
+                <span class="cursor">|</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#profile" data-text="Profile">Profile</a></li>
+                <li><a href="#languages" data-text="Languages">Languages</a></li>
+                <li><a href="#software" data-text="Software">Software</a></li>
+                <li><a href="#hobbies" data-text="Hobbies">Hobbies</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="profile" class="profile-section">
+            <div class="glitch-container">
+                <h2 class="section-title glitch" data-text="Profile">Profile</h2>
+            </div>
+            <div class="profile-container">
+                <div class="profile-image">
+                    <div class="status-indicator online" title="Online"></div>
+                    <div class="circle">
+                        <div class="circle-inner">
+                            <img src="shesh.jpg" alt="Profile Picture" id="profile-pic">
+                        </div>
+                    </div>
+                    <div class="scan-line"></div>
+                </div>
+                <div class="profile-info">
+                    <div class="terminal">
+                        <div class="terminal-header">
+                            <div class="terminal-button"></div>
+                            <div class="terminal-button"></div>
+                            <div class="terminal-button"></div>
+                            <div class="terminal-title">user@system:~</div>
+                        </div>
+                        <div class="terminal-body">
+                            <p class="terminal-line"><span class="terminal-prompt">$</span> <span class="terminal-command">whoami</span></p>
+                            <h1 class="name terminal-output">I am Skiddy</h1>
+                            <p class="terminal-line"><span class="terminal-prompt">$</span> <span class="terminal-command">cat pronouns.txt</span></p>
+                            <p class="pronouns terminal-output">they/them</p>
+                            <p class="terminal-line"><span class="terminal-prompt">$</span> <span class="terminal-command">cat title.txt</span></p>
+                            <p class="title terminal-output">idk bro get out</p>
+                            <p class="terminal-line"><span class="terminal-prompt">$</span> <span class="terminal-command">cat description.txt</span></p>
+                            <p class="description terminal-output">Coding Since 8 years Old, Coding In lua‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ ‎ </p>
+                            <p class="terminal-line"><span class="terminal-prompt">$</span> <span class="terminal-command">ls social/</span></p>
+                            <div class="social-links terminal-output">
+                                <a href="https://github.com/CodeE4X-dev" class="social-icon" data-tooltip="GitHub"><i class="fab fa-github"></i></a>
+                                <a href="https://guns.lol/xyzisa" class="social-icon" data-tooltip="gunslol"><i class="fas fa-crosshairs"></i></a>
+                                <a href="https://x.com/CodeE4X" class="social-icon" data-tooltip="Twitter"><i class="fab fa-twitter"></i></a>
+                                <a href="https://instagram.com/screaminout_" class="social-icon" data-tooltip="Instagram"><i class="fab fa-instagram"></i></a>
+                                <a href="bug.html" class="social-icon" data-tooltip="owowowowo"><i class="fas fa-bug"></i></a>
+                            </div>
+                            <p class="terminal-line"><span class="terminal-prompt">$</span> <span class="terminal-cursor">|</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="languages" class="languages-section">
+            <div class="glitch-container">
+                <h2 class="section-title glitch" data-text="Programming Languages">Programming Languages</h2>
+            </div>
+            <div class="languages-container">
+                <!-- Populated by JavaScript -->
+            </div>
+        </section>
+
+        <section id="software" class="software-section">
+            <div class="glitch-container">
+                <h2 class="section-title glitch" data-text="Software & Tools">Software & Tools</h2>
+            </div>
+            <div class="software-container">
+                <div class="software-item animate-on-scroll">
+                    <i class="fas fa-shield-alt"></i>
+                    <div class="software-info">
+                        <h3>Kali Linux</h3>
+                        <p class="software-description">If you're into breaking things and then fixing them (or breaking them more), Kali's your best friend. Loaded with tools for testing and exploiting vulnerabilities.</p>
+                    </div>
+                </div>
+                <div class="software-item animate-on-scroll">
+                    <i class="fas fa-user-secret"></i>
+                    <div class="software-info">
+                        <h3>Metasploit</h3>
+                        <p class="software-description">Wanna mess with exploits and take down some systems? Metasploit is the go-to for testing weaknesses — powerful and a bit scary.</p>
+                    </div>
+                </div>
+                <div class="software-item animate-on-scroll">
+                    <i class="fas fa-network-wired"></i>
+                    <div class="software-info">
+                        <h3>Wireshark</h3>
+                        <p class="software-description">Need to see what's floating around your network? Wireshark lets you sniff traffic like a pro. Perfect for eavesdropping and troubleshooting.</p>
+                    </div>
+                </div>
+                <div class="software-item animate-on-scroll">
+                    <i class="fas fa-key"></i>
+                    <div class="software-info">
+                        <h3>Burp Suite</h3>
+                        <p class="software-description">Perfect for web app testing. Find vulnerabilities in web apps and APIs — it's like digital detective work, but you're the bad guy.</p>
+                    </div>
+                </div>
+                <div class="software-item animate-on-scroll">
+                    <i class="fas fa-lock"></i>
+                    <div class="software-info">
+                        <h3>John the Ripper</h3>
+                        <p class="software-description">You forgot your password? John's here to help you crack it, one hash at a time. Bruteforce mode activated!</p>
+                    </div>
+                </div>
+                <div class="software-item animate-on-scroll">
+                    <i class="fas fa-wifi"></i>
+                    <div class="software-info">
+                        <h3>Aircrack-ng</h3>
+                        <p class="software-description">Aircrack-ng takes your Wi-Fi cracking skills to the next level. Find weak networks and hijack connections like a boss.</p>
+                    </div>
+                </div>
+                <div class="software-item animate-on-scroll">
+                    <i class="fas fa-terminal"></i>
+                    <div class="software-info">
+                        <h3>Nmap</h3>
+                        <p class="software-description">Want to know what's alive on a network? Nmap's your go-to. Scan ports, map out networks, and do some recon like an undercover agent.</p>
+                    </div>
+                </div>
+                <div class="software-item animate-on-scroll">
+                    <i class="fas fa-eye"></i>
+                    <div class="software-info">
+                        <h3>OWASP ZAP</h3>
+                        <p class="software-description">Find bugs in your web applications and patch them before they become a problem. OWASP ZAP is the friendly, open-source vulnerability scanner you need.</p>
+                    </div>
+                </div>
+                <div class="software-item animate-on-scroll">
+                    <i class="fas fa-sun"></i>
+                    <div class="software-info">
+                        <h3>Al Prometh</h3>
+                        <p class="software-description">I Make this tools, very usefull, not public just me and isa lol</p>
+                    </div>
+                </div>
+                <div class="software-item animate-on-scroll">
+                    <i class="fas fa-robot"></i>
+                    <div class="software-info">
+                        <h3>Recon-ng</h3>
+                        <p class="software-description">Recon-ng is like having a spy on the inside. Collect info from multiple sources in a neat and tidy package. Perfect for your digital espionage.</p>
+                    </div>
+                </div>
+                <div class="software-item animate-on-scroll">
+                    <i class="fas fa-cogs"></i>
+                    <div class="software-info">
+                        <h3>Netcat</h3>
+                        <p class="software-description">Netcat is a hacker's best friend for opening ports and sending data. Think of it as your network swiss army knife — compact and ready to slice through any problem.</p>
+                    </div>
+                </div>
+                <div class="software-item animate-on-scroll">
+                    <i class="fas fa-code"></i>
+                    <div class="software-info">
+                        <h3>Hydra</h3>
+                        <p class="software-description">Bruteforce your way into almost anything. Hydra's the tool you need when you're looking to unlock systems by smashing passwords into them until they give up.</p>
+                    </div>
+                </div>
+                <div class="software-item animate-on-scroll">
+                    <i class="fas fa-database"></i>
+                    <div class="software-info">
+                        <h3>SQLmap</h3>
+                        <p class="software-description">Inject your way to glory! SQLmap automates SQL injection attacks, allowing you to exploit those vulnerabilities with ease.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="hobbies" class="hobbies-section">
+            <div class="glitch-container">
+                <h2 class="section-title glitch" data-text="Hobbies & Interests">Hobbies & Interests</h2>
+            </div>
+            <div class="hobbies-container">
+                <div class="hobby-item animate-on-scroll">
+                    <i class="fas fa-flag-checkered"></i>
+                    <h3>CTF Competitions</h3>
+                    <p>The thrill of cracking codes and capturing flags. It's all about strategy and skill. Do you have what it takes?</p>
+                </div>
+                <div class="hobby-item animate-on-scroll">
+                    <i class="fas fa-puzzle-piece"></i>
+                    <h3>Stealing Skid Money</h3>
+                    <p>But who doesn't love learning how the other half "hacks"? Real talk, though — never do it!</p>
+                </div>
+                <div class="hobby-item animate-on-scroll">
+                    <i class="fas fa-robot"></i>
+                    <h3>Reverse Engineering</h3>
+                    <p>Digging into code, breaking it down, and seeing how things tick. It's like being a tech detective.</p>
+                </div>
+                <div class="hobby-item animate-on-scroll">
+                    <i class="fas fa-microchip"></i>
+                    <h3>Hardware Hacking</h3>
+                    <p>Nothing like cracking open gadgets and seeing if you can make them do something unexpected.</p>
+                </div>
+                <div class="hobby-item animate-on-scroll">
+                    <i class="fas fa-book"></i>
+                    <h3>Security Research</h3>
+                    <p>Stay one step ahead of the game. Finding flaws before the bad guys do.</p>
+                </div>
+                <div class="hobby-item animate-on-scroll">
+                    <i class="fas fa-chess"></i>
+                    <h3>DDos</h3>
+                    <p>Attacks? yeah its funny he will pay for the request and make them poor HAHA Kidding:v</p>
+                </div>
+                <div class="hobby-item animate-on-scroll">
+                    <i class="fas fa-chess"></i>
+                    <h3>Doxxing</h3>
+                    <p>Definitely not cool. Let's keep it ethical — we can learn and grow without crossing lines. but im doing it</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 | <span class="typed-text"></span><span class="cursor">&nbsp;</span></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
